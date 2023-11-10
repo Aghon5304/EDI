@@ -1,1 +1,1 @@
-# EWD_PG
+# Project na Elektroniczną Wymianę Danych
