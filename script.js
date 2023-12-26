@@ -6,6 +6,7 @@ async function handleAPI() {
     //wywołanie funkcji
     table(await data)
     graph(await data)
+    pieChart(await data)
 }
 function table(data){
     keys = Object.keys(data[0])
@@ -34,7 +35,6 @@ function table(data){
 }
 function graph(data){
     //graph
-    console.log(data.map(row=>row.odleglosc_od_gwizdy_w_km))
     new Chart(
         document.getElementById("tablePoint"),
         {
@@ -60,5 +60,35 @@ function graph(data){
         }
     );
     
+}
+function pieChart(data){
+    //pie chart
+    new Chart(
+        document.getElementById("pieChart"),
+        {
+            type: "pie",
+            data: {
+                labels:[
+                    'możliwe',
+                    'niemożliwe',
+                ],
+                datasets: [{
+                    label: 'czy możliwe życie',
+                    data: [data.map(row=>row.czy_mozliwe_zycie).filter(x=>x==true).length,data.map(row=>row.czy_mozliwe_zycie).filter(x=>x==false).length],
+                    backgroundColor: ['green','red'],
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                    type: 'linear',
+                    position: 'bottom'
+                    }
+                },
+                responsive: false
+                
+            }
+        }
+    );
 }
 handleAPI()
