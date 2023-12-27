@@ -5,37 +5,61 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="icon" href="icon.png">
         <link rel="stylesheet" href="style.css" type="text/css">
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body>
-        <header>
-            
-        </header>
-        <nav><!--   TO JEST NAV BAR. PASEK Z BOKU/GÓRY KTÓRY KIERUJE NAS DO PODSTRON/PODSEKCJI   -->
-
-        </nav>
-        <main><!--  TO JEST GŁÓWNA CZĘŚĆ STRONY  -->
-            <h1>Planety w kosmosie i ich charakterystyka</h1>
-            <h3>Team Members:</h3>
-            <p>
-                Oliwier Matus, Marcin Lewandowski, Dawid Kulas
-            </p>
-            <div class="table-wrapper">
-                <table id="apiTable">
-                </table>
-            </div>
-            <div id="tabele">
-                <h1>Wykres ilości księżyców do odległości od gwiazdy</h1>
-                <canvas id="tablePoint" width="1200px" height="600px"></canvas>
-                
-                <h1>Wykres czy możliwe życie</h1>
-                <canvas id="pieChart" width="1200px" height="600px"></canvas>
-            </div>
-        </main>
-        <footer><!--    TO JEST FOOTER. TO JEST DOLNA CZĘŚĆ STRONY WK TÓREJ UMIESZCZAMY AUTORÓW I INNE LINKI    -->
-            Lorem ipsum dolor sit amet.
-        </footer>
+        <div id="container">
+            <header>
+                <h1>Projekt grupowy</h1>
+            </header>
+            <nav><!--   TO JEST NAV BAR. PASEK Z BOKU/GÓRY KTÓRY KIERUJE NAS DO PODSTRON/PODSEKCJI   -->
+                <ul>
+                    <a href="#autorzy"><li>Autorzy</li></a>
+                    <a href="#dane"><li>Dane</li></a>
+                    <a href="#wykresy"><li>Wykresy</li></a>
+                    <a href=""><li>Źródła</li></a>
+                </ul>
+            </nav>
+            <main><!--  TO JEST GŁÓWNA CZĘŚĆ STRONY  -->
+                <article>
+                    <header class="header" id="autorzy">
+                    <p>Członkowie</p>
+                    </header>
+                    <div class="photo-element">
+                      <img src="" width="900px" height="auto" alt="">
+                    </div>
+                    <div class="text-box">
+                      Oliwier Matus, Marcin Lewandowski, Dawid Kulas
+                    </div>
+                </article>
+                <article>
+                  <header class="header" id="dane">
+                    <p>Dane</p>
+                  </header>
+                  <div class="table-wrapper">
+                      <table id="apiTable">
+                      </table>
+                  </div>
+                </article>
+                <article>
+                    <header class="header" id="wykresy">
+                      <p>Wykresy</p>
+                    </header>
+                    <div id="tabele">
+                        <h1>Wykres ilości księżyców do odległości od gwiazdy</h1>
+                        <canvas id="tablePoint" width="1200px" height="600px"></canvas>
+                        
+                        <h1>Wykres czy możliwe życie</h1>
+                        <canvas id="pieChart" width="1200px" height="600px"></canvas>
+                    </div>
+                </article>
+            </main>
+            <footer><!--    TO JEST FOOTER. TO JEST DOLNA CZĘŚĆ STRONY WK TÓREJ UMIESZCZAMY AUTORÓW I INNE LINKI    -->
+                Lorem ipsum dolor sit amet.
+            </footer>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
