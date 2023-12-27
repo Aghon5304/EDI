@@ -1,5 +1,6 @@
 
 // pobieranie API
+Chart.defaults.color = '#E0FFFF';
 async function handleAPI() {
     const response = await fetch("https://my.api.mockaroo.com/planety.json?key=ab038ca0");
     const data = await response.json();
@@ -45,6 +46,7 @@ function graph(data){
                     pointRadius: 4,
                     label: 'ilosc ksiezyców',
                     data: data.map(row=>row.ile_ksiezycy),
+                    backgroundColor: "green",
                 }]
             },
             options: {

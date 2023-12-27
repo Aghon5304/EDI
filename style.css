@@ -2,9 +2,47 @@ body {
     background-color: #333333;
     color: #E0FFFF;
     font-family: sans-serif;
+    text-align: center;
   }
-  
   a {
     color: #00B3B3;
   }
-  
+  h1 {
+    font-size: 65px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+
+
+
+  /*Tabela i wykresy*/
+  #apiTable {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 0px;
+    min-width: max-content;
+  }
+  th {
+    position: sticky;
+    top: 0px;
+    background-color: #800080;
+    color: #FFFFFF;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 11px;
+  }
+  .table-wrapper {
+    max-height: 400px;
+    overflow-y: scroll;
+    margin: 20px;
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+  canvas {
+    margin: auto;
+  }
+  /*Tabela i wykresy*/
