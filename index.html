@@ -7,6 +7,7 @@
         <title>Document</title>
         <link rel="icon" href="icon.png">
         <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body>
         <div id="container">
@@ -24,59 +25,34 @@
             <main><!--  TO JEST GŁÓWNA CZĘŚĆ STRONY  -->
                 <article>
                     <header class="header" id="autorzy">
-                    <p>O nas</p>
+                    <p>Członkowie</p>
                     </header>
                     <div class="photo-element">
-                        <img src="" width="900px" height="auto" alt="">
+                      <img src="" width="900px" height="auto" alt="">
                     </div>
                     <div class="text-box">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Dolores magni temporibus excepturi natus, id cupiditate aut 
-                            voluptatibus omnis. Tempora modi iste distinctio soluta 
-                            cumque unde corporis, impedit nobis perferendis obcaecati? 
-                            Voluptatibus fugit unde deserunt ad quo similique eligendi, 
-                            sapiente, magnam provident omnis obcaecati, nulla officiis nisi 
-                            expedita veniam. Facere, inventore.
-                        </p>
+                      Oliwier Matus, Marcin Lewandowski, Dawid Kulas
                     </div>
                 </article>
                 <article>
-                    <header class="header" id="dane">
+                  <header class="header" id="dane">
                     <p>Dane</p>
-                    </header>
-                    <div class="text-box">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Dolores magni temporibus excepturi natus, id cupiditate aut 
-                            voluptatibus omnis. Tempora modi iste distinctio soluta 
-                            cumque unde corporis, impedit nobis perferendis obcaecati? 
-                            Voluptatibus fugit unde deserunt ad quo similique eligendi, 
-                            sapiente, magnam provident omnis obcaecati, nulla officiis nisi 
-                            expedita veniam. Facere, inventore.
-                        </p>
-                    </div>
+                  </header>
+                  <div class="table-wrapper">
+                      <table id="apiTable">
+                      </table>
+                  </div>
                 </article>
                 <article>
                     <header class="header" id="wykresy">
-                    <p>Wykresy</p>
+                      <p>Wykresy</p>
                     </header>
-                    <div class="photo-element">
-                        <!--Miejsce na wykres-->
-                    </div>
-                    <div class="photo-element">
-                        <!--Miejsce na wykres-->
-                    </div>
-                    <div class="text-box">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Dolores magni temporibus excepturi natus, id cupiditate aut 
-                            voluptatibus omnis. Tempora modi iste distinctio soluta 
-                            cumque unde corporis, impedit nobis perferendis obcaecati? 
-                            Voluptatibus fugit unde deserunt ad quo similique eligendi, 
-                            sapiente, magnam provident omnis obcaecati, nulla officiis nisi 
-                            expedita veniam. Facere, inventore.
-                        </p>
+                    <div id="tabele">
+                        <h1>Wykres ilości księżyców do odległości od gwiazdy</h1>
+                        <canvas id="tablePoint" width="1200px" height="600px"></canvas>
+                        
+                        <h1>Wykres czy możliwe życie</h1>
+                        <canvas id="pieChart" width="1200px" height="600px"></canvas>
                     </div>
                 </article>
             </main>
@@ -84,5 +60,6 @@
                 Lorem ipsum dolor sit amet.
             </footer>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
