@@ -1,6 +1,8 @@
 
 // pobieranie API
-Chart.defaults.color = '#E0FFFF';
+Chart.defaults.backgroundColor = 'rgba(224, 255, 255,0.5)';
+Chart.defaults.borderColor = 'rgba(224, 255, 255,0.5)';
+Chart.defaults.color = 'rgba(224, 255, 255)';
 async function handleAPI() {
     const response = await fetch("https://my.api.mockaroo.com/planety.json?key=ab038ca0");
     const data = await response.json();

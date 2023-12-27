@@ -1,9 +1,9 @@
 body {
-    background-color: #33313B;
+    background-color: rgb(64, 66, 68);
     background-image: url(https://images.unsplash.com/photo-1528818955841-a7f1425131b5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=felix-mittermeier-Knwea-mLGAg-unsplash.jpg&w=1920);
     background-attachment: fixed;
     background-size: 100%;
-    color: #E0FFFF;
+    color: rgb(224, 255, 255);
     margin: 0;
     font-family: sans-serif;
     text-align: center;
@@ -11,12 +11,12 @@ body {
 /*projekt*/
 
 #container {
-  width: 1050px;
+  width: 1300px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   backdrop-filter: blur(3px);
-  background-color: rgb(127, 127, 127, 10%);
+  background-color: rgb(64, 66, 68,30%);
   padding-top: 5px;
 }
 
@@ -49,7 +49,7 @@ nav {
 
   nav > ul > a > li {
     display: inline-block;
-    width: 150px;
+    width: 300px;
     height: 50px;
     text-decoration: none;
     line-height: 50px;
@@ -100,8 +100,8 @@ nav {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(212, 212, 212, 40%);
-  text-align: left;
+  /*background-color: rgb(212, 212, 212, 40%);
+  text-align: left;*/
   border-radius: 15px;
   margin-top: 20px;
   font-size: 20px;
@@ -115,10 +115,10 @@ a {
     color: #00B3B3;
   }
   h1 {
-    font-size: 65px;
+    font-size: 35px;
   }
   h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
 
