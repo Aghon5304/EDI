@@ -6,6 +6,7 @@ body {
     color: #E0FFFF;
     margin: 0;
     font-family: sans-serif;
+    text-align: center;
   }
 
 #container {
@@ -88,45 +89,11 @@ nav {
     font-weight: bold;
   }
 
-#team {
-  width: 1000px;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80px;
-  text-align: center;
+.photo-element {
+  margin: 50px;
+  border-radius: 30px 0px;
+  box-shadow: 8px 8px 2px rgb(0, 127, 255, 80%);
 }
-
-  #team > .team-element {
-    display: inline-block;
-    width: 250px;
-    height: 350px;
-    text-align: center;
-    margin-top: -20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-
-    #team > .team-element > img {
-      border-radius: 30px 0px;
-      box-shadow: 8px 8px 2px rgb(0, 127, 255, 80%);
-    }
-
-    #team > .team-element > h2 {
-      padding-top: 10px;
-      font-weight: normal;
-    }
-
-    #team > .team-element:nth-child(1) {
-      border-right: 3px solid white;
-      padding-right: 45px;
-    }
-
-    #team > .team-element:nth-child(3){
-      border-left: 3px solid white;
-    }
 
 .text-box {
   width: 1000px;
