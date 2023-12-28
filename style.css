@@ -7,140 +7,116 @@ body {
     margin: 0;
     font-family: sans-serif;
     text-align: center;
-  }
-/*projekt*/
-
-#container {
-  width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  backdrop-filter: blur(3px);
-  background-color: rgb(64, 66, 68,30%);
-  padding-top: 5px;
 }
 
 header {
-  text-align: center;
+    text-align: center;
+    a {
+        color: #00B3B3;
+    }
+    h1 {
+        font-size: 35px;  
+    }
 }
-  
-  a {
-    color: #00B3B3;
-  }
 
-body > header > h1 {
-  font-size: 35px;
+.header {
+    width: 1000px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-left: 12px solid rgb(0, 127, 255);
+    line-height: 70px;
+    background-color: rgb(212, 212, 212, 40%);
+    text-align: left;
+    border-radius: 15px;
+    p {
+        margin: 0;
+        margin-left: 20px;
+        font-size: 38px;
+        font-weight: bold;
+    }
 }
 
 nav {
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  margin-top: 30px;
-  position: sticky;
-  top: 0;
-  background-color: rgb(0, 127, 255);
-}
-
-  nav > ul {
-    margin-top: 0;
-    margin-left: -40px;
-  }
-
-  nav > ul > a > li {
-    display: inline-block;
-    width: 300px;
+    width: 100%;
     height: 50px;
-    text-decoration: none;
-    line-height: 50px;
-    border-right: solid 2px black;
-    color: #E0FFFF;
-    font-size: 20px;
-    margin-left: -5px;
-  }
-
-  nav > ul > a:first-child > li {
-    border-left: solid 2px black;
-    margin-left: 0;
-  }
-
-    nav > ul > a > li:hover {
-      background-color: #4D4C7D;
-      color: #F99417;
-      transition: ease-in-out 0.5s;
+    text-align: center;
+    margin-top: 30px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 127, 255);
+    ul {
+        margin-top: 0;
+        margin-left: -40px;
+        a {
+            li {
+                display: inline-block;
+                width: 300px;
+                height: 50px;
+                text-decoration: none;
+                line-height: 50px;
+                border-right: solid 2px black;
+                color: #E0FFFF;
+                font-size: 20px;
+                margin-left: -5px;
+            }
+            li:hover {
+                background-color: #4D4C7D;
+                color: #F99417;
+                transition: ease-in-out 0.5s;
+            }
+        }
+        a:first-child {
+            li {
+                border-left: solid 2px black;
+                margin-left: 0;
+            }
+        }
     }
-
-.header {
-  width: 1000px;
-  height: 70px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  border-left: 12px solid rgb(0, 127, 255);
-  line-height: 70px;
-  background-color: rgb(212, 212, 212, 40%);
-  text-align: left;
-  border-radius: 15px;
-}
-
-  .header > p {
-    margin: 0;
-    margin-left: 20px;
-    font-size: 38px;
-    font-weight: bold;
-  }
-
-.photo-element {
-  margin: 50px;
-  border-radius: 30px 0px;
-  box-shadow: 8px 8px 2px rgb(0, 127, 255, 80%);
 }
 
 .text-box {
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  /*background-color: rgb(212, 212, 212, 40%);
-  text-align: left;*/
-  border-radius: 15px;
-  margin-top: 20px;
-  font-size: 20px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: rgb(212, 212, 212, 40%);
+    text-align: left;*/
+    border-radius: 15px;
+    margin-top: 40px;
+    font-size: 20px;
+    p {
+        padding: 18px; 
+    }
 }
 
-  .text-box > p {
-    padding: 18px;
-  }
-/* main */
 a {
     color: #00B3B3;
   }
-  h1 {
+h1 {
     font-size: 35px;
-  }
-  h3 {
+}
+h3 {
     font-size: 25px;
-  }
+}
 
-
-
-  /*Tabela i wykresy*/
-  #apiTable {
+#apiTable {
     border: 1px solid black;
     border-collapse: separate;
     border-spacing: 0px;
     min-width: max-content;
-  }
-  th {
+}
+th {
     position: sticky;
     top: 0px;
     background-color: #800080;
     color: #FFFFFF;
-  }
-  th, td {
+}
+th, td {
     border: 1px solid black;
     padding: 11px;
-  }
-  .table-wrapper {
+}
+.table-wrapper {
     max-height: 400px;
     overflow-y: scroll;
     margin: 20px;
@@ -148,8 +124,7 @@ a {
     margin: auto;
     margin-top: 45px;
     margin-bottom: 45px;
-  }
-  canvas {
+}
+canvas {
     margin: auto;
-  }
-  /*Tabela i wykresy*/
+}
