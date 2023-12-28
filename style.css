@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: sans-serif;
     text-align: center;
+
 }
 
 #container {
@@ -16,6 +17,7 @@ body {
     backdrop-filter: blur(3px);
     background-color: rgb(64, 66, 68,30%);
     padding-top: 1px;
+
 }
 
 nav {
