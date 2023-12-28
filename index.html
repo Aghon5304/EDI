@@ -11,11 +11,9 @@
     </head>
     <body>
         <div id="container">
-            <header>
                 <h1>
                     Planety w kosmosie i ich charakterystyka
                 </h1>
-            </header>
             <nav><!--   TO JEST NAV BAR. PASEK Z BOKU/GÓRY KTÓRY KIERUJE NAS DO PODSTRON/PODSEKCJI   -->
                 <ul>
                     <a href="#autorzy"><li>Autorzy</li></a>
@@ -26,18 +24,13 @@
             </nav>
             <main><!--  TO JEST GŁÓWNA CZĘŚĆ STRONY  -->
                 <article>
-                    <header class="header" id="autorzy">
+                    <header id="autorzy">
                         <p>Członkowie</p>
                     </header>
-                    <!--<div class="photo-element">
-                      <img src="" width="900px" height="auto" alt="">
-                    </div>-->
-                    <div class="text-box">
-                        Oliwier Matus, Marcin Lewandowski, Dawid Kulas
-                    </div>
+                    <p class="members">Oliwier Matus, Marcin Lewandowski, Dawid Kulas</p>
                 </article>
                 <article>
-                  <header class="header" id="dane">
+                  <header id="dane">
                     <p>Dane</p>
                   </header>
                   <div class="table-wrapper">
@@ -46,14 +39,14 @@
                   </div>
                 </article>
                 <article>
-                    <header class="header" id="wykresy">
+                    <header id="wykresy">
                       <p>Wykresy</p>
                     </header>
                     <div id="tabele">
-                        <h2>Zależność ilości księżyców do odległości od gwiazdy</h2>
+                        <h1>Wykres ilości księżyców do odległości od gwiazdy</h1>
                         <canvas id="tablePoint" width="1200px" height="600px"></canvas>
                         
-                        <h2>Wykres czy możliwe życie</h2>
+                        <h1>Wykres czy możliwe życie</h1>
                         <canvas id="pieChart" width="1200px" height="600px"></canvas>
                     </div>
                 </article>
