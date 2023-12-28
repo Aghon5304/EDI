@@ -43,7 +43,7 @@ function graph(data){
         {
             type: "scatter",
             data: {
-                labels: data.map(row=>row.odleglosc_od_gwizdy_w_km),
+                labels: data.map(row=>row.odleglosc_od_gwiazdy_w_km),
                 datasets: [{
                     pointRadius: 4,
                     label: 'ilosc ksiezyców',
