@@ -1,5 +1,4 @@
 body {
-    background-color: rgb(64, 66, 68);
     background-image: url(https://images.unsplash.com/photo-1528818955841-a7f1425131b5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=felix-mittermeier-Knwea-mLGAg-unsplash.jpg&w=1920);
     background-attachment: fixed;
     background-size: 100%;
@@ -16,34 +15,7 @@ body {
     margin-top: 0;
     backdrop-filter: blur(3px);
     background-color: rgb(64, 66, 68,30%);
-    padding-top: 5px;
-}
-
-header {
-    text-align: center;
-    h1 {
-        font-size: 35px;  
-    }
-}
-
-.header {
-    width: 1000px;
-    height: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    border-left: 12px solid rgb(0, 127, 255);
-    line-height: 70px;
-    background-color: rgb(212, 212, 212, 40%);
-    text-align: left;
-    border-radius: 15px;
-
-    p {
-        margin: 0;
-        margin-left: 20px;
-        font-size: 38px;
-        font-weight: bold;
-    }
+    padding-top: 1px;
 }
 
 nav {
@@ -71,8 +43,8 @@ nav {
                 margin-left: -5px;
             }
             li:hover {
-                background-color: #4D4C7D;
-                color: #F99417;
+                background-color: #800080;
+                color: #e0e0e0 ;
                 transition: ease-in-out 0.5s;
             }
         }
@@ -85,28 +57,46 @@ nav {
     }
 }
 
-.text-box {
+header {
+    width: 1000px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-left: 12px solid rgb(0, 127, 255);
+    line-height: 70px;
+    background-color: rgb(212, 212, 212, 40%);
+    text-align: left;
+    border-radius: 15px;
+    p {
+        margin: 0;
+        margin-left: 20px;
+        font-size: 38px;
+        font-weight: bold;
+    }
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.members {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    /*background-color: rgb(212, 212, 212, 40%);
-    text-align: left;*/
+    text-align: center;
     border-radius: 15px;
-    margin-top: 45px;
-    font-size: 20px;
-    p {
-        padding: 18px; 
-    }
+    margin-top: 48px;
+    font-size: 30px;
+    font-family: sans-serif;
 }
 
 a {
     color: #00B3B3;
-}
-h1 {
-    font-size: 35px;
-}
-h3 {
-    font-size: 25px;
 }
 
 #apiTable {
