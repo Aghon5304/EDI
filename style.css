@@ -94,11 +94,34 @@ h3 {
     border-radius: 15px;
     margin-top: 48px;
     font-size: 30px;
-    font-family: sans-serif;
+}
+
+.text-box {
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background-color: rgb(212, 212, 212, 40%);
+  border-radius: 15px;
+  margin-top: 48px;
+  padding: 10px 20px 10px 20px;
+  font-size: 25px;
+  p {
+    padding: 0;
+    margin: 0;
+    br {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 a {
     color: #00B3B3;
+    text-decoration: none;
+    transition: ease-in-out 0.5s;
+}
+a:hover {
+  color: rgb(255, 187, 62)
 }
 
 #apiTable {
