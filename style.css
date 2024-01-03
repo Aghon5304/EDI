@@ -158,6 +158,9 @@ th, td {
     margin-top: 1.8rem;
     margin-bottom: 1.8rem;
 }
-canvas {
+.chart-container {
+    position: relative;
     margin: auto;
+    height: 25rem;
+    width: 50rem;
 }
