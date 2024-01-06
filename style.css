@@ -122,6 +122,21 @@ h3 {
   }
 }
 
+.photo-box {
+    width: 38rem;
+    height: 16rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+article:last-of-type {
+    padding-bottom: 1.5rem;
+}
+
 a {
     color: #00B3B3;
     text-decoration: none;
