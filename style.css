@@ -34,7 +34,8 @@ nav {
     z-index: 2;
     ul {
         margin-top: 0;
-        margin-left: -1.6rem;
+        margin-left: 0;
+        padding: 0;
         a {
             li {
                 display: inline-block;
@@ -42,10 +43,8 @@ nav {
                 height: 2rem;
                 text-decoration: none;
                 line-height: 2rem;
-                border-right: solid 2px black;
                 color: #E0FFFF;
                 font-size: 0.8rem;
-                margin-left: -0.2rem;
             }
             li:hover {
                 background-color: #800080;
@@ -55,8 +54,7 @@ nav {
         }
         a:first-child {
             li {
-                border-left: solid 2px black;
-                margin-left: 0;
+                margin: 0;
             }
         }
     }
