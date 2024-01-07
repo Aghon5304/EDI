@@ -52,14 +52,20 @@ function graph(data){
                 }]
             },
             options: {
+                maintainAspectRatio: false,
                 scales: {
+                  y: {
+                    stacked: true,
+                        grid: {
+                            display: true,
+                        }
+                    },
                     x: {
-                    type: 'linear',
-                    position: 'bottom'
+                        grid: {
+                            display: true,
+                        }
                     }
-                },
-                responsive: false
-                
+                }
             }
         }
     );
@@ -83,14 +89,20 @@ function pieChart(data){
                 }]
             },
             options: {
+                maintainAspectRatio: false,
                 scales: {
+                  y: {
+                    stacked: true,
+                        grid: {
+                            display: false,
+                        }
+                    },
                     x: {
-                    type: 'linear',
-                    position: 'bottom'
+                        grid: {
+                            display: false
+                        }
                     }
-                },
-                responsive: false
-                
+                }
             }
         }
     );

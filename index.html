@@ -4,8 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="icon" href="icon.png">
+        <title>Projekt</title>
+        <link rel="icon" href="icon.ico">
         <link rel="stylesheet" href="style.css" type="text/css">
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
@@ -19,7 +19,7 @@
                     <a href="#autorzy"><li>Autorzy</li></a>
                     <a href="#dane"><li>Dane</li></a>
                     <a href="#wykresy"><li>Wykresy</li></a>
-                    <!-- <a href=""><li>Źródła</li></a> -->
+                    <a href="#zrodla"><li>Źródła</li></a>
                 </ul>
             </nav>
             <main><!--  TO JEST GŁÓWNA CZĘŚĆ STRONY  -->
@@ -27,7 +27,15 @@
                     <header id="autorzy">
                         <p>Członkowie</p>
                     </header>
+                    <div class="photo-box">
+                        <img src="https://images.unsplash.com/photo-1568607689150-17e625c1586e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=sami-matias-UZOpP-YHe9Q-unsplash.jpg&w=1920" width="100%" height="auto">
+                    </div>
                     <p class="members">Oliwier Matus, Marcin Lewandowski, Dawid Kulas</p>
+                    <!-- <div class="text-box">
+                        <p>
+                            
+                        </p>
+                    </div> -->
                 </article>
                 <article>
                   <header id="dane">
@@ -42,12 +50,32 @@
                     <header id="wykresy">
                       <p>Wykresy</p>
                     </header>
-                    <div id="tabele">
-                        <h1>Wykres ilości księżyców do odległości od gwiazdy</h1>
-                        <canvas id="tablePoint" width="1200px" height="600px"></canvas>
+                    <div id="table">
+                        <h2>Wykres ilości księżyców do odległości od gwiazdy</h2>
+                        <div class="chart-container">
+                            <canvas id="tablePoint"></canvas>
+                        </div>
                         
-                        <h1>Wykres czy możliwe życie</h1>
-                        <canvas id="pieChart" width="1200px" height="600px"></canvas>
+                        <h2>Wykres czy możliwe życie</h2>
+                        <div class="chart-container">
+                            <canvas id="pieChart"></canvas>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <header id="zrodla">
+                        <p>Źródła</p>
+                    </header>
+                    <div class="text-box">
+                        <p>
+                            Zdjęcie tła: Felix Mittermeier na <a href="https://unsplash.com/photos/milky-way-Knwea-mLGAg" target="_blank">Unsplash.com</a>
+                            <br>
+                            Zdjęcie zorzy polarnej: Sami Matias na <a href="https://unsplash.com/photos/aurora-borealis-UZOpP-YHe9Q" target="_blank">Unsplash.com</a>
+                            <br>
+                            Dane: <a href="" target="_blank">Mockaroo.com</a>
+                            <br>
+                            Wykresy: <a href="https://www.chartjs.org/" target="_blank">Charts.js</a>
+                        </p>
                     </div>
                 </article>
             </main>
